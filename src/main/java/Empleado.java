@@ -3,15 +3,12 @@ public class Empleado {
 	private String nombre;
 	private String identificacion;
 	private String cargo;
+	private Biblioteca biblioteca;
 
 	public String getNombre() {
 		return this.nombre;
 	}
 
-	/**
-	 * 
-	 * @param nombre
-	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -20,10 +17,6 @@ public class Empleado {
 		return this.identificacion;
 	}
 
-	/**
-	 * 
-	 * @param identificacion
-	 */
 	public void setIdentificacion(String identificacion) {
 		this.identificacion = identificacion;
 	}
@@ -32,26 +25,11 @@ public class Empleado {
 		return this.cargo;
 	}
 
-	/**
-	 * 
-	 * @param cargo
-	 */
 	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
 
-	public void getAttribute() {
-		// TODO - implement Empleado.getAttribute
-		throw new UnsupportedOperationException();
-	}
+	public Biblioteca getBiblioteca() { return this.biblioteca; }
 
-	/**
-	 * 
-	 * @param attribute
-	 */
-	public void setAttribute(int attribute) {
-		// TODO - implement Empleado.setAttribute
-		throw new UnsupportedOperationException();
-	}
-
+	public void setBiblioteca(Biblioteca biblioteca) { this.biblioteca = biblioteca; }
 }

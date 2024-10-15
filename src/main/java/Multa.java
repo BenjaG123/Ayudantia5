@@ -8,10 +8,6 @@ public class Multa {
 		return this.monto;
 	}
 
-	/**
-	 * 
-	 * @param monto
-	 */
 	public void setMonto(int monto) {
 		this.monto = monto;
 	}
@@ -20,10 +16,6 @@ public class Multa {
 		return this.fechaEmision;
 	}
 
-	/**
-	 * 
-	 * @param fechaEmision
-	 */
 	public void setFechaEmision(int fechaEmision) {
 		this.fechaEmision = fechaEmision;
 	}
@@ -32,10 +24,6 @@ public class Multa {
 		return this.estado;
 	}
 
-	/**
-	 * 
-	 * @param estado
-	 */
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}

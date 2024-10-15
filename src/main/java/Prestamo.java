@@ -2,15 +2,13 @@ public class Prestamo {
 
 	private int fechaPrestamo;
 	private int fechaEntrega;
+	private Usuario usuario;
+	private Libro libro;
 
 	public int getFechaPrestamo() {
 		return this.fechaPrestamo;
 	}
 
-	/**
-	 * 
-	 * @param fechaPrestamo
-	 */
 	public void setFechaPrestamo(int fechaPrestamo) {
 		this.fechaPrestamo = fechaPrestamo;
 	}
@@ -19,26 +17,15 @@ public class Prestamo {
 		return this.fechaEntrega;
 	}
 
-	/**
-	 * 
-	 * @param fechaEntrega
-	 */
 	public void setFechaEntrega(int fechaEntrega) {
 		this.fechaEntrega = fechaEntrega;
 	}
 
-	public void getAttribute() {
-		// TODO - implement Prestamo.getAttribute
-		throw new UnsupportedOperationException();
-	}
+	public Usuario getUsuario() { return usuario; }
 
-	/**
-	 * 
-	 * @param attribute
-	 */
-	public void setAttribute(int attribute) {
-		// TODO - implement Prestamo.setAttribute
-		throw new UnsupportedOperationException();
-	}
+	public void setUsuario(Usuario usuario) { this.usuario = usuario; }
 
+	public Libro getLibro() { return libro; }
+
+	public void setLibro(Libro libro) { this.libro = libro; }
 }
