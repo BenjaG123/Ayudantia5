@@ -1,8 +1,18 @@
+import java.util.Date;
+
 public class Multa {
 
 	private int monto;
-	private int fechaEmision;
+	private Date fechaEmision;
 	private String estado;
+	private Prestamo prestamo;
+
+	public Multa(int monto, Prestamo prestamo) {
+		this.monto = monto;
+		this.fechaEmision = new Date();
+		this.estado = "No pagada.";
+		this.prestamo = prestamo;
+	}
 
 	public int getMonto() {
 		return this.monto;
@@ -12,11 +22,11 @@ public class Multa {
 		this.monto = monto;
 	}
 
-	public int getFechaEmision() {
+	public Date getFechaEmision() {
 		return this.fechaEmision;
 	}
 
-	public void setFechaEmision(int fechaEmision) {
+	public void setFechaEmision(Date fechaEmision) {
 		this.fechaEmision = fechaEmision;
 	}
 
@@ -26,6 +36,10 @@ public class Multa {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+
+	public void pagar(){
+		this.estado = "Pagada.";
 	}
 
 }

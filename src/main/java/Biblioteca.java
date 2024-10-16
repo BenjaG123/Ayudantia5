@@ -41,4 +41,6 @@ public class Biblioteca {
 	public void eliminarLibro(Libro libro) {
 		libros.remove(libro);
 	}
+
+	public ArrayList<Libro> getLibros() { return libros; }
 }

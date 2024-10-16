@@ -6,6 +6,11 @@ public class Categoria {
 	private String descripcion;
 	private ArrayList<Libro> libros;
 
+	public Categoria(String nombre, String descripcion) {
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+	}
+
 	public String getNombre() {
 		return this.nombre;
 	}

@@ -1,23 +1,35 @@
+import java.util.Date;
+
 public class Prestamo {
 
-	private int fechaPrestamo;
-	private int fechaEntrega;
+	private Date fechaPrestamo;
+	private Date fechaEntrega;
 	private Usuario usuario;
 	private Libro libro;
 
-	public int getFechaPrestamo() {
+	public Prestamo(Libro libro, Usuario usuario) {
+		this.libro = libro;
+		this.usuario = usuario;
+		this.fechaPrestamo = new Date();
+	}
+
+	public void devolverLibro() {
+		this.fechaEntrega = new Date();
+	}
+
+	public Date getFechaPrestamo() {
 		return this.fechaPrestamo;
 	}
 
-	public void setFechaPrestamo(int fechaPrestamo) {
+	public void setFechaPrestamo(Date fechaPrestamo) {
 		this.fechaPrestamo = fechaPrestamo;
 	}
 
-	public int getFechaEntrega() {
+	public Date getFechaEntrega() {
 		return this.fechaEntrega;
 	}
 
-	public void setFechaEntrega(int fechaEntrega) {
+	public void setFechaEntrega(Date fechaEntrega) {
 		this.fechaEntrega = fechaEntrega;
 	}
 

@@ -5,6 +5,12 @@ public class Empleado {
 	private String cargo;
 	private Biblioteca biblioteca;
 
+	public Empleado(String nombre, String identificacion, String cargo) {
+		this.nombre = nombre;
+		this.identificacion = identificacion;
+		this.cargo = cargo;
+	}
+
 	public String getNombre() {
 		return this.nombre;
 	}

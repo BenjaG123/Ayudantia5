@@ -13,6 +13,10 @@ public class Usuario {
 		this.prestamos = new ArrayList<Prestamo>();
 	}
 
+	public void realizarPrestamo(Prestamo prestamo) {
+		prestamos.add(prestamo);
+	}
+
 	public String getNombre() {
 		return this.nombre;
 	}
